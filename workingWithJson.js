@@ -3,6 +3,8 @@ const fs = require('fs');
 const dataBuffer = fs.readFileSync('sample.json');
 const dataJSON = dataBuffer.toString();
 const data = JSON.parse(dataJSON);
+console.log(data);
+
 
 data.name = 'Meet';
 data.age = 21;
